@@ -83,7 +83,7 @@ public class Main {
                     break;
 
                 case 4:
-                    if (Catalogo.grupos.isEmpaty()){
+                    if (Catalogo.grupos.isEmpty()){
                         System.out.println("no hay grupos");
                         break;
                     }
@@ -95,7 +95,7 @@ public class Main {
                     }
                     System.out.println("Selecciona el grupo: ");
                     int grupoindice1 = sc.nextInt();
-                    universidad.AgregarGrupo(Catalogo.grupos.get(grupoindice1));
+                    universidad.AgregarGrupos(Catalogo.grupos.get(grupoindice1));
                     System.out.println("grupo agregado correctamente a: " + universidad.nombre + " ");
                     break;
 
@@ -133,7 +133,7 @@ public class Main {
                     System.out.println("Selecciona el grupo: ");
                     int grupoindice2 = sc.nextInt();
 
-                    if(universidad.getGrupos().get(grupoindice2).getAlumno().isEmpty()){
+                    if(universidad.getGrupos().get(grupoindice2).getAlumnos().isEmpty()){
                         System.out.println("no hay alumnos");
                         break;
                     }
@@ -155,7 +155,7 @@ public class Main {
                     System.out.println("Selecciona la materia: ");
                     int materia1 = sc.nextInt();
 
-                    universidad.getGrupos().get(grupoindice2).getAlumnos().get(indicealumno1)AgregarMateria(Catalogo.materias.get(materia1));
+                    universidad.getGrupos().get(grupoindice2).getAlumnos().get(indicealumno1).AgregarMateria(Catalogo.materias.get(materia1));
                     System.out.println("Al alumno se le asigno la materia");
                     break;
 
