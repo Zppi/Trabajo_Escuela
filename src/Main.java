@@ -159,9 +159,6 @@ public class Main {
                     System.out.println("Al alumno se le asigno la materia");
                     break;
 
-
-
-
             }
         }while(opcion !=7);
     }
