@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     static Scanner sc = new Scanner(System.in);
     static Universidad universidad = new Universidad ("UTT", new Direccion("Matamoros", 3433, 78777 ));
@@ -157,6 +155,10 @@ public class Main {
 
                     universidad.getGrupos().get(grupoindice2).getAlumnos().get(indicealumno1).AgregarMateria(Catalogo.materias.get(materia1));
                     System.out.println("Al alumno se le asigno la materia");
+                    break;
+
+                case 7:
+                    System.out.println("Saliendo del programa");
                     break;
 
             }
