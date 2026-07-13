@@ -163,6 +163,6 @@ public class Main {
 
 
             }
-        }while
+        }while(opcion !=7);
     }
 }
