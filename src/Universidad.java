@@ -10,7 +10,7 @@ public class Universidad {
         this.direccion = new Direccion(direccion.calle, direccion.numerodecalle, direccion.codigopostal);
     }
 
-    public void addGrupo(Grupo grupo) {
+    public void AgregarGrupos(Grupo grupo) {
         grupos.add(grupo);
     }
 
